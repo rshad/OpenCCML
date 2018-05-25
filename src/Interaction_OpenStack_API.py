@@ -102,7 +102,24 @@ def create_server(conn,instance_name,image_name,flavor_name,network_name,keypair
 
 
 
-#def delete_server():
+def delete_server(conn,server, ignore_missing=True, force=False):
+    """
+    delete_server, used to delete the server, server.
+
+    :param conn: the connection object, which represents the port to many elements of the api, in this case is compute.
+
+    :param server – The value can be either the ID of a server or a Server instance.
+
+    :param ignore_missing (bool) – When set to False ResourceNotFound will be raised when the server does not exist.
+           When set to True, no exception will be set when attempting to delete a nonexistent server.
+
+    :param force (bool) – When set to True, the server deletion will be forced immediately.
+
+    :return: None
+    """
+
+    conn.compute.delete_server(server, ignore_missing=True, force=False)
+
 
 
 
