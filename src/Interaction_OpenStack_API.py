@@ -102,7 +102,7 @@ def create_server(conn,instance_name,image_name,flavor_name,network_name,keypair
 
 
 
-def delete_server(conn,server, ignore_missing=True, force=False):
+def delete_server(conn,server):
     """
     delete_server, used to delete the server, server.
 
@@ -121,6 +121,7 @@ def delete_server(conn,server, ignore_missing=True, force=False):
     conn.compute.delete_server(server, ignore_missing=True, force=False)
 
 
+# def create_snapchot():
 
 
 # main
