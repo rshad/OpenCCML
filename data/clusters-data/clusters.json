@@ -1,0 +1,64 @@
+{
+    "clusters": {
+        "cluster_1": {
+            "cluster_name": "cluster_1",
+            "slaves_number": 2,
+            "masters_number": 1,
+            "flavor": "flavor_1",
+            "internal_network": "rshad_network",
+            "external_network": "external",
+            "security_group": "default",
+            "image": "CentOS7",
+            "slaves": [
+                {
+                    "slave_name": "instance_1",
+                    "slave_internal_IP": "0.0.0.0"
+                },
+                {
+                    "slave_name": "instance_2",
+                    "slave_internal_IP": "1.1.1.1"
+                }
+            ],
+            "masters": [
+                {
+                    "master_name": "instance_1",
+                    "master_IP": "0.0.0.0"
+                },
+                {
+                    "master_name": "instance_2",
+                    "master_IP": "1.1.1.1"
+                }
+            ]
+        },
+        "cluster_2": {
+            "cluster_name": "cluster_2",
+            "slaves_number": 2,
+            "masters_number": 1,
+            "flavor": "flavor_1",
+            "internal_network": "rshad_network",
+            "external_network": "external",
+            "security_group": "default",
+            "image": "CentOS7",
+            "slaves": [
+                {
+                    "slave_name": "instance_1",
+                    "slave_internal_IP": "0.0.0.0"
+                },
+                {
+                    "slave_name": "instance_2",
+                    "slave_internal_IP": "1.1.1.1"
+                }
+            ],
+            "masters": [
+                {
+                    "master_name": "instance_1",
+                    "master_IP": "0.0.0.0"
+                },
+                {
+                    "master_name": "instance_2",
+                    "master_IP": "1.1.1.1"
+                }
+            ]
+        }
+    }
+}

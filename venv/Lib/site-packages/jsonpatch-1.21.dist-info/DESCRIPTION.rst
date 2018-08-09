@@ -1,0 +1,34 @@
+python-json-patch |Build Status| |Coverage Status|
+==================================================
+
+Applying JSON Patches in Python
+-------------------------------
+
+Library to apply JSON Patches according to `RFC
+6902 <http://tools.ietf.org/html/rfc6902>`__
+
+See Sourcecode for Examples
+
+-  Website: https://github.com/stefankoegl/python-json-patch
+-  Repository: https://github.com/stefankoegl/python-json-patch.git
+-  Documentation: https://python-json-patch.readthedocs.org/
+-  PyPI: https://pypi.python.org/pypi/jsonpatch
+-  Travis-CI: https://travis-ci.org/stefankoegl/python-json-patch
+-  Coveralls: https://coveralls.io/r/stefankoegl/python-json-patch
+
+Running external tests
+----------------------
+
+To run external tests (such as those from
+https://github.com/json-patch/json-patch-tests) use ext\_test.py
+
+::
+
+    ./ext_tests.py ../json-patch-tests/tests.json
+
+.. |Build Status| image:: https://secure.travis-ci.org/stefankoegl/python-json-patch.png?branch=master
+   :target: https://travis-ci.org/stefankoegl/python-json-patch
+.. |Coverage Status| image:: https://coveralls.io/repos/stefankoegl/python-json-patch/badge.png?branch=master
+   :target: https://coveralls.io/r/stefankoegl/python-json-patch?branch=master
+
+
